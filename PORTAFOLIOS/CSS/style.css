@@ -1,0 +1,389 @@
+:root {
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    
+}
+
+a {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navegacion - Header*/
+.navegacion--parrafo {
+    color: white;
+    font-Size: 25px;
+    padding: 1px 50px;
+}
+
+.navegacion--parrafo span {
+    font-weight: 900;
+}
+
+.menu {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 0;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: darkslategray;
+      
+}
+
+.navegacion--a {
+    display: inline-block;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 14px;
+}
+
+.navegacion--a:hover {
+    background-color: #045556;
+    border-radius: 30px;
+    transition: all .7s ease 0s;
+}
+
+.login {
+    background-color: #045556;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.login:hover {
+    opacity: .7;
+    color: white;
+}
+
+.form {
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+    gap: 10px;
+
+}
+
+.formulario {
+    padding: 7px 10px;
+}
+
+.formulario input {
+    border: none;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.unicobuscar {
+    padding: 10px 50px;
+    color: white;
+}
+#proyectos, #habilidades, #contacto {
+    transition: .7s;
+    scroll-margin: 16ex;
+}
+
+/*Contenido primero*/
+.contenedor__imagen {
+    padding: 1rem;
+    margin: 25px 40px;
+}
+
+.header__2 img {
+    border-radius: 150rem;
+    width: 17rem;
+}
+.header2 {
+    display: flex;
+    gap: 3rem;
+}
+
+.grid__texto p {
+    text-align: justify;
+}
+
+/*Habilidades*/
+.skills--titulo {
+    font-size: 4rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #045556;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    padding: 10px 0;
+    gap: 2rem;   
+    border-bottom: 1px solid #045556;
+    margin-bottom: 25px;
+    background-image: url(../IMG/tecno.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.skills--bloque {
+    color: white;
+    text-align: center;
+    margin: 0 -50px;
+}
+
+
+.skills--icono {
+    font-size: 10rem;
+}
+.skills--icono--1:hover {
+    transition: .3s;
+    color: #F69C1A;
+    
+}
+.skills--icono--2:hover {
+    transition: .3s;
+    color: #0097DE;
+}
+
+.skills--icono--3:hover {
+    transition: .3s;
+    color: #DAE102;
+}
+
+.skills--icono--4:hover {
+    transition: .3s;
+    color: aqua;
+}
+
+
+/*Proyectos*/
+
+.proyecto__titulo {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 4rem;
+    border-bottom: 1px solid #045556;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 4rem;
+    transition: transform .2s; 
+}
+.proyectos--practica:hover {
+    box-shadow: 1px 1px 5px black;
+    transform: scale(1.1); 
+    transition: .5s
+}
+
+.proyectos--practica img {
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.proyectos--practica h2 {
+    text-align: center;
+}
+
+.proyectos--practica a {
+    text-align: center;
+    color: black;
+}
+
+
+
+/*Footer*/
+.footer {
+    background-color: #045556;
+    color:white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer__titulo {
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+.footer__facebook:hover{
+    color: #3b5998;
+    transition: .7s;
+}
+.footer__instagram:hover{
+    color: #dd2a7b;
+    transition: .7s;
+}
+.footer__correo:hover{
+    color: #e36b2c;
+    transition: .7s;
+}
+.footer__whatsapp:hover{
+    color: #1ebea5;
+    transition: .7s;
+}
+.contacto {
+    font-size: 20px;
+}
+
+.enlace__footer {
+    border-bottom: 1px solid black;
+}
+
+/*iniciar sesion, Registrarse y Olvidaste la Clave*/
+.iniciasesion {
+    background-image: url(../IMG/montaña.jpg);
+    height: 39rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.iniciasesion__formulario {
+    margin: 100px 0;
+    border-radius: 7px;
+    width: 21rem;
+    height: 23rem;
+    background-color: #999999;
+    text-align: center;
+    opacity: .7;
+    
+}
+
+.iniciasesion__titulo {
+    color: white;
+    text-align: center;
+    margin: 17px 0;
+    font-size: 2.2rem;
+
+}
+
+.iniciasesion__formulario input {
+    border: none;
+    margin: 4px 0;
+    width: 85%;
+    padding: 10px;
+    border-radius: .2rem;
+
+}
+
+.btn {
+    background-color: #045556;
+    padding: 10px;
+    border-radius: .4rem;
+}
+
+.btn:hover {
+    transition: .4s;
+    opacity: .7;
+}
+
+.iniciasesion__registrate {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.iniciasesion__registrate__enlace {
+    border-bottom: 1px solid #045556;
+}
+.iniciasesion__registrate__enlace:hover {
+    color: black;
+    transition: .4s;
+}
+
+.olvidastelaclave {
+    width: 30rem;
+    height: 14rem;
+}
+
+.volverinicio {
+    background-color: #045556;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/*Disñeo Responsivo*/
+@media(max-width:768px) {
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    .login__izquierda, .login {
+        background-color: darkslategray;
+    }
+    .navegacion--a{
+        border-bottom: 1px goldenrod;
+    }
+    .navegacion--a:hover {
+        border-bottom: 1px goldenrod;
+    }
+    .unicobuscar {
+        display: none;
+    }
+    .contenedor, .main {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .header2 {
+        display: grid;
+    }
+    .skills, .proyectos, .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    .proyectos {
+        text-align: center;
+        
+    }
+    .iniciasesion {
+        background-image: url(../IMG/montaña.jpg);
+        height: 844px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+}
+
